@@ -1,1 +1,1 @@
-# argo-cd
+# argo-cd configuration for ZSB Project
