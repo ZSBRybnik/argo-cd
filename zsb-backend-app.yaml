@@ -5,8 +5,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    name: ''
+  destination: 
     namespace: default
     server: 'https://kubernetes.default.svc'
   source:
@@ -18,4 +17,6 @@ spec:
         - values.yaml
   project: default
   syncPolicy:
-    automated: null
+    automated:
+      selfHeal: true
+      prune: true
